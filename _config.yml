@@ -32,6 +32,7 @@ github_username:  anipos
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-mentions
 
 # Exclude from processing.
 # The following items will not be processed, by default.
