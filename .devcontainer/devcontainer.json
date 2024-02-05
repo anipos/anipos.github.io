@@ -1,0 +1,10 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "3.3",
+      "NODE_VERSION": "21"
+    }
+  },
+  "postCreateCommand": [".devcontainer/bootstrap.sh"]
+}
