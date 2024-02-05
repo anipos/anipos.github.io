@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://anipos.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: anipos_co_jp
-github_username:  anipos
+github_username: anipos
 
 # Build settings
 theme: minima
@@ -35,7 +35,6 @@ plugins:
   - jekyll-mentions
   - jekyll-seo-tags
   - jekyll-sitemap
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
