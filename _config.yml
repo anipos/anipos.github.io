@@ -33,6 +33,8 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-mentions
+  - jekyll-seo-tags
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
