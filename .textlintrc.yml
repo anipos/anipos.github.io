@@ -1,0 +1,4 @@
+rules:
+  textlint-rule-preset-ja-spacing: true,
+  textlint-rule-preset-ja-technical-writing: true
+  textlint-rule-preset-jtf-style: true
