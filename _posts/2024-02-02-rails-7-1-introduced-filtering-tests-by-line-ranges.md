@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Rails 7.1で指定した範囲の行にあるテストを実行可能になりました"
+title: "Rails 7.1で指定した範囲の行にあるテストを実行可能になりました"
 author: "@shouichi"
 date: 2024-02-02 17:26:14 +09:00
 categories: rails
