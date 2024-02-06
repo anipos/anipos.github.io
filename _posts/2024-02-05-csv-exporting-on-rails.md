@@ -78,7 +78,11 @@ class Admin::UserExport < ApplicationRecord
 end
 ```
 
-ここでの味噌は`after_create`で作成後にCSVを生成するjobをenqueueする部分です。CSVの生成自体はモデルに定義されていますが、`LaterJob`を呼び出すことにより実際のはbackground workerによって行われます。`LaterJob`は与えられたobjectのmethodを呼び出すだけの非常に単純なjobです。
+ここでの味噌は`after_create`で作成後にCSVを生成するjobをenqueueする部分です。CSVの生成自体はモデルに定義されていますが、`LaterJob`を呼び出すことにより実際のはbackground workerによって行われます。なお`after_create`では`after_create_commit`を使うべきと言う意見もあります。[^3]
+
+`LaterJob`は与えられたobjectのmethodを呼び出すだけの非常に単純なjobです。
+
+[^3]: [Prevent jobs from being scheduled within transactions](https://github.com/rails/rails/issues/26045)
 
 ```ruby
 class LaterJob < ApplicationJob
