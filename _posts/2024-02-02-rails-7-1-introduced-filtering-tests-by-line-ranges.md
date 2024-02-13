@@ -3,7 +3,7 @@ layout: post
 title: "Rails 7.1で指定した範囲の行にあるテストを実行可能になりました"
 author: "@shouichi"
 date: 2024-02-02 17:26:14 +09:00
-categories: rails
+tags: rails
 ---
 
 Rails 7.1では、指定した行の範囲内に宣言されたテストのみを実行する機能が加わりました。例えば、以下のコマンドは`user_test.rb`の10〜20行目に宣言してあるテストを実行します。

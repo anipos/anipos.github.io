@@ -3,7 +3,7 @@ layout: post
 title: "CSVエクスポート機能でもレールに乗る"
 author: "@shouichi"
 date: 2024-02-05 21:05:31 +09:00
-categories: rails
+tags: rails
 ---
 
 データのCSV形式エクスポート機能はあらゆるアプリケーションで求められる事でしょう。Controllerで直接CSVを作りそれを送るのが素朴な実装で、それで問題なく動作する場合も多いでしょう。
