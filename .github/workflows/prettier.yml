@@ -13,4 +13,4 @@ jobs:
           node-version: 20.x
           cache: yarn
       - run: yarn install --frozen-lockfile
-      - run: yarn run prettier --check '**/**.{yml,md}'
+      - run: yarn run prettier --check '**/**.{yml,md,html}'
