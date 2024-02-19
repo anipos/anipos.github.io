@@ -120,7 +120,7 @@ resolve("ActiveStorage::Attachment") do |attachment, options|
 end
 ```
 
-上記により`link_to`などに`ActiveStorage::ActiveStorage`が渡された場合、`rails_storage_redirect`を呼び出すようにしています。これがRailsの規約ではないURLが生成されていた理由です。では次に`rails_storage_redirect`の中身を見ましょう。
+上記により`link_to`などに`ActiveStorage::Attachment`が渡された場合、`rails_storage_redirect`を呼び出すようにしています。これがRailsの規約ではないURLが生成されていた理由です。では次に`rails_storage_redirect`の中身を見ましょう。
 
 ```ruby
 direct :rails_storage_redirect do |model, options|
