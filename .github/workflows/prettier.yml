@@ -2,6 +2,7 @@ name: Format Files
 
 on:
   - push
+  - pull_request
 
 jobs:
   prettier:
