@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Active Storageの仕組み（その１）"
+title: "Active Storageの仕組み（その1）"
 author: "@shouichi"
 date: 2024-02-16 19:35:57 +09:00
 tags: rails
@@ -82,7 +82,7 @@ module ActiveStorage
 end
 ```
 
-どうやら`delegate_missing_to`大体の処理を`attachment`に移譲しているようです。そこで`attachment`の正体を探ってみましょう。
+どうやら`delegate_missing_to`大体の処理を`attachment`に委譲しているようです。そこで`attachment`の正体を探ってみましょう。
 
 ```ruby
 irb> User.first.avatar.attachment
@@ -120,7 +120,7 @@ resolve("ActiveStorage::Attachment") do |attachment, options|
 end
 ```
 
-上記により`link_to`などに`ActiveStorage::ActiveStorage`が渡された場合、`rails_storage_redirect`を呼び出すようにしています。これがRailsの規約ではないURLが生成されていた理由です。では次に`rails_storage_redirect`の中身を見ましょう。
+上記により`link_to`などに`ActiveStorage::Attachment`が渡された場合、`rails_storage_redirect`を呼び出すようにしています。これがRailsの規約ではないURLが生成されていた理由です。では次に`rails_storage_redirect`の中身を見ましょう。
 
 ```ruby
 direct :rails_storage_redirect do |model, options|
