@@ -43,6 +43,7 @@ end
 
 ```ruby
 ActionDispatch::IntegrationTest.register_encoder :xml,
+  param_encoder: -> params { params.to_xml },
   response_parser: -> body { REXML::Document.new(body) }
 
 get posts_path, as: :xml
