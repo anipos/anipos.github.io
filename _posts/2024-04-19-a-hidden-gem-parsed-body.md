@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "テストではJSON.parseの変わりにparsed_bodyを使いましょう"
+title: "テストではJSON.parseの代わりにparsed_bodyを使いましょう"
 author: "@shouichi"
 date: 2024-04-19 16:27:46 +09:00
 tags: rails
