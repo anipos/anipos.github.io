@@ -77,7 +77,7 @@ GlobalID::Locator.locate(gid)
 Global IDは単純にclass/idをセットで文字列にエンコードしているだけです。さらに文字列が改竄出来ないように署名付きにすることも出来ます。
 
 ```ruby
-sgid = Issue.find(1).to_global_id.to_s
+sgid = Issue.find(1).to_signed_global_id.to_s
 #=> "BAhJIh5naWQ6Ly9pZGluYWlkaS9Vc2VyLzM5NTk5BjoGRVQ=--81d7358dd5ee2ca33189bb404592df5e8d11420e"
 
 GlobalID::Locator.locate_signed(sgid)
